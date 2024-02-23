@@ -1,11 +1,15 @@
 "use strict"
 
-//DONE: add arrays for Image carousel
+//:DONE add arrays for carousel
+const textAnimate = document.getElementById('messageS');
+const messages = ['MODELLING', 'BEAUTY', 'FEARLESS', 'REPUTATION', 'CAREFREE'];
 
-const imgCarousel = ["./Images/fashionModel.jpg", "./Images/model_One.jpg", "./Images/modelOnRunway.jpg", "./Images/Runway.jpeg", "./Images/runwayImage.jpeg"];
+let textIndex = 0;
 
-//DONE: get elements from dom
+//TODO: Create function for rotating text
+function rotateText() {
+  textAnimate.textContent = messages[textIndex];
+}
+let myColorNum = 0;
 
-const imgContents = document.querySelector("#carouselContent");
-const previousButton = document.querySelector("#previousButton");
-const nextButton = document.querySelector("#nextButton");
+textAnimate.style.transform = "rotate(360deg)";

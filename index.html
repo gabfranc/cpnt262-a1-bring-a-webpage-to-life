@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bring a Webpage to Life</title>
-  <script src="script.js" defer></script>
+  <script type="module" src="script.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -45,21 +45,22 @@
     }
   </script>
 </head>
-<body>
-  <header>
-    <div id="logo" class="mt-6 ml-4">
-      <img src="./Logo.png" class="h-10" alt="Logo">
-    </div>
+<body class="bg-peach">
+  <header class="justify-end align-end ml-96 pl-96 pl-auto">
+    <nav class="mt-16 pl-96 gap-16 justify-end align-end absolute flex-row list-none font-bold">
+        <li class="rotate-90">HOME</li>
+        <li class="mt-12 rotate-90">ABOUT</li>
+        <li class="mt-12 rotate-90">BLOGS</li>
+        <li class="mt-12 rotate-90">CONTACT</li>
+    </nav>
     
   </header>
 
-  <main>
-    <button id="previousBtn"></button>
-    <div id="carouselContent">
-      <img alt="imgCarousel" id="imgCarousel">
-    </div>
-    <button id="nextBtn"></button>
-    
+  <main class="absolute">
+   <!--Text will change constantly-->
+   <div id="text-content">
+    <p>Fashion is <span  id="messages"></span></p>
+   </div>
   </main>
 
   <footer>
