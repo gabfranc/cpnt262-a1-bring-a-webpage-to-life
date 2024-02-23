@@ -6,3 +6,6 @@ const imgCarousel = ["./Images/fashionModel.jpg", "./Images/model_One.jpg", "./I
 
 //TODO: get elements from dom
 
+const imgContents = document.querySelector("#carouselContent");
+const previousButton = document.querySelector("#previousButton");
+const nextButton = document.querySelector("#nextButton");
