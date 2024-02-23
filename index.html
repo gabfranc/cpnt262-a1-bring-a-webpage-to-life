@@ -3,9 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <ti</title>
+  <title>Bring a Webpage to Life</title>
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'red': '#b15757',
+            'red-dark': '#b02e2e',
+            'peach': '#eca48c',
+            'white': 'f4fffb',
+            'black': '#140303', 
+          },
+
+          screens: {
+            '1': '570px',
+            '2': '768px',
+            '3': '1024px',
+            '4': '1280px',
+            '5': '1536px',
+          },
+
+          fontsize: {
+            'sm':'16',
+            'lg': '36',
+            'xl': '56',
+            '2xl': '64',
+            '3xl':'72',
+          },
+
+          spacing: {
+            'm': '5vh',
+            'p': '15vh',
+          }
+
+
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-  
+  <header>
+    <div id="logo" class="mt-6 ml-4">
+      <img src="./Logo.png" class="h-10" alt="Logo">
+    </div>
+    
+  </header>
+
+  <main>
+    <button id="previousBtn"></button>
+    <div id="carouselContent">
+      <img alt="imgCarousel" id="imgCarousel">
+    </div>
+    <button id="nextBtn"></button>
+    
+  </main>
+
+  <footer>
+
+  </footer>
 </body>
 </html>
