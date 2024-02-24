@@ -2,6 +2,7 @@
  position: absolute;
  height: 300vh;
  width: 400vh;
+ transform: translate(-50%, -50%);
  box-shadow: 3px 3px 1px #b15757;
 }
 
@@ -21,3 +22,4 @@ div #information {
   height: 95vh;
   width: 95vh;
 }
+

@@ -7,13 +7,21 @@ const messages = ['MODELLING', 'BEAUTY', 'FEARLESS', 'REPUTATION', 'CAREFREE'];
 let textIndex = 0;
 
 //DONE: Create function for rotating text
-function rotateText() {
-  textAnimate.textContent = messages[textIndex];
-  textIndex = (textIndex + 1) % textAnimate.length;
+// Text will change constantly on loading page
+function rotate(){
+  textAnimate.textContent = messages[myIndexNum];
+  myIndexNum = (myIndexNum + 3) % messages.length;
 }
 
-//TODO: set Intervals for text to rotate
+let myColorNum = 0;
 
+textAnimate.style.transform = "rotate(360deg)";
+textAnimate.style.color = "#024282";
+// Setting the intervals for the text to change
+setInterval(rotate, 360); // For every 2 seconds, the text will rotate constantly.
+
+
+ 
 //TODO: Create animation code for image
 let myIndex= 0;
 
@@ -32,3 +40,4 @@ function automaticSlider() {
 }
 
 setInterval(rotate, 2000); 
+
