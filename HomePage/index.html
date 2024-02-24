@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bring a Webpage to Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Patrick+Hand&family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="module" src="script.js" defer></script>
+  <script type="module" src="/client.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -48,7 +52,7 @@
 </head>
 <body class="bg-peach">
   <header class="justify-end align-end ml-96 pl-96 pl-auto">
-    <div id="logo"><img src="Logo.png" alt="Logo"></div>
+    <div id="logo"><img src="/Logo.png" alt="Logo"></div>
     <nav class="mt-16 pl-96 gap-16 justify-end align-end absolute flex-row list-none font-bold">
         <li class="rotate-90">HOME</li>
         <li class="mt-12 rotate-90">ABOUT</li>
@@ -57,7 +61,7 @@
     </nav>
     
   </header>
-
+  <div id="mousemove"></div>
   <main class="absolute">
     <div id="container" class=" overflow-hidden">
     <!----IMAGE CONTENT---->

@@ -1,3 +1,7 @@
+body {
+  cursor: none;
+}
+
 #images{
  position: absolute;
  height: 300vh;
@@ -23,3 +27,42 @@ div #information {
   width: 95vh;
 }
 
+/** Mouse movement ***/
+
+
+#mousemove {
+  z-index:999;
+  position: fixed;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50px;
+  box-shadow: 3px 3px 30px #f4fffb,
+              3px 3px 30px #eca48c,
+              3px 3px 30px #eca48c;
+  pointer-events: none;
+  animation: colors 5s infinite;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(180deg);
+  }
+}
+
+#mousemove::before{
+  content:'';
+  position: absolute;
+  background: #b15757;
+  width: 6vh;
+  height: 6vh;
+  opacity: 0.3;
+  border-radius: 50vh;
+  box-shadow: 3px 3px 30px #f4fffb,
+  3px 3px 30px #eca48c,
+  3px 3px 30px #eca48c;
+  transform: translate(-30%, -30%);
+}

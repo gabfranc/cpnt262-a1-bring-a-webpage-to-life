@@ -4,14 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="eyes.css">
+  <link rel="stylesheet" href="starterpage.css">
   <script src="client.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'red': '#b15757',
+            'red-dark': '#b02e2e',
+            'peach': '#eca48c',
+            'white': '#f4fffb',
+            'black': '#140303', 
+          },
+
+          screens: {
+            '1': '570px',
+            '2': '768px',
+            '3': '1024px',
+            '4': '1280px',
+            '5': '1536px',
+          },
+
+          fontsize: {
+            'sm':'16',
+            'lg': '36',
+            'xl': '56',
+            '2xl': '64',
+            '3xl':'72',
+          },
+
+          spacing: {
+            'm': '5vh',
+            'p': '15vh',
+          }
+
+
+        }
+      }
+    }
+  </script>
 </head>
 <body>
 
-  <div id="boxElement">
-    <div class="eyes"></div>
-    <div class="eyes"></div>
-  </div>
+ <section>
+  <h2 id="fashion-title" class="text-9xl font-Lexend font-bold text-red-dark opacity-25" onclick="scrambleWords()"><span>F</span><span>A</span><span>S</span><span>H</span><span>I</span><span>O</span><span>N</span></h2>
+ </section>
+<div id="mousemove"></div>
 </body>
 </html>
