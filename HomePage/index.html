@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bring a Webpage to Life</title>
+  <link rel="stylesheet" href="style.css">
   <script type="module" src="script.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -47,6 +48,7 @@
 </head>
 <body class="bg-peach">
   <header class="justify-end align-end ml-96 pl-96 pl-auto">
+    <div id="logo"><img src="Logo.png" alt="Logo"></div>
     <nav class="mt-16 pl-96 gap-16 justify-end align-end absolute flex-row list-none font-bold">
         <li class="rotate-90">HOME</li>
         <li class="mt-12 rotate-90">ABOUT</li>
@@ -57,9 +59,21 @@
   </header>
 
   <main class="absolute">
-   <!--Text will change constantly-->
-   <div id="text-content">
-    <p>Fashion is <span  id="messages"></span></p>
+    <div id="container" class=" overflow-hidden">
+    <!----IMAGE CONTENT---->
+      <div id="images" class="relative">
+        <img src="/Images/fashionModel.jpg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
+        <img src="/Images/model_One.jpg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
+        <img src="/Images/modelOnRunway.jpg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
+        <img src="/Images/Runway.jpeg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
+        <img src="/Images/runwayImage.jpeg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
+
+      </div>
+
+    <!--Text will change constantly-->
+    <div id="text-content" class="text-peach ml-4 text-2xl font-bold font-serif">
+      <p>Fashion is <span id="messages"></span></p>
+    </div>
    </div>
   </main>
 

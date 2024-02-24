@@ -1,0 +1,23 @@
+#images{
+ position: absolute;
+ height: 300vh;
+ width: 400vh;
+ box-shadow: 3px 3px 1px #b15757;
+}
+
+#container {
+  height: 550px;
+  width: 550px;
+  
+}
+
+#text-content {
+  position: absolute;
+  margin-top:45vh;
+}
+
+div #information {
+  background-color: #b15757;
+  height: 95vh;
+  width: 95vh;
+}
