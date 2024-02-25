@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Patrick+Hand&family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Patrick+Hand&family=Sora:wght@100..800&family=Updock&display=swap" rel="stylesheet">
   <script src="/HomePage/home.js" defer></script>
   <script type="module" src="/client.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -50,17 +53,17 @@
     }
   </script>
 </head>
-<body class="bg-peach overflow-x-hidden">
+<body class="bg-white overflow-x-hidden h-max">
   <div id="mousemove"></div>
   <header class="flex h-20 w-64 pt-8 mr-96 sticky">
     <img src="/Logo.png" class="h-8 pl-6" alt="Logo">
     <nav>
       <ul class="flex gap-24 ml-20">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#" class="w-56"> WORK</a></li>
-        <li><a href="#">BLOGS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li class="nav-link"><a href="#">HOME</a></li>
+        <li class="nav-link"><a href="#">ABOUT</a></li>
+        <li class="nav-link"><a href="#" class="w-56"> WORK</a></li>
+        <li class="nav-link"><a href="#">BLOGS</a></li>
+        <li class="nav-link"><a href="#">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -96,11 +99,26 @@
       </div>
        
 
-        <div id="message" class="relative mt-96 ml-40 font-Lexend text-4xl font-bold">
-          <h2>Fashion is <span></span></h2>
+        <div id="message" class="relative mt-80 ml-45 font-Lexend text-4xl font-bold">
+          <h2 class="ml-16">Fashion is <span id="words" class="font-3xl font-bold"></span></h2>
+          <div id="button" class="flex-column">
+            <button type="button" href="#" id="btn2" class="bg-red">OUR WORK</button>
+            <button type="button" href="#" id="btn" class="bg-red-dark"> EVENTS</button>
+          </div>
         </div>
+        
     </div>
     
+    <div id="about-info" class="absolute pl-12">
+      <div id="what-we-do">
+        <h2 id="about-title">What We DO?</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br>
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br>
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
