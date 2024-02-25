@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Patrick+Hand&family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="script.js" defer></script>
+  <script src="/HomePage/home.js" defer></script>
   <script type="module" src="/client.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -50,40 +50,57 @@
     }
   </script>
 </head>
-<body class="bg-peach">
-  <header class="justify-end align-end ml-96 pl-96 pl-auto">
-    <div id="logo"><img src="/Logo.png" alt="Logo"></div>
-    <nav class="mt-16 pl-96 gap-16 justify-end align-end absolute flex-row list-none font-bold">
-        <li class="rotate-90">HOME</li>
-        <li class="mt-12 rotate-90">ABOUT</li>
-        <li class="mt-12 rotate-90">BLOGS</li>
-        <li class="mt-12 rotate-90">CONTACT</li>
-    </nav>
-    
-  </header>
+<body class="bg-peach overflow-x-hidden">
   <div id="mousemove"></div>
-  <main class="absolute">
-    <div id="container" class=" overflow-hidden">
-    <!----IMAGE CONTENT---->
-      <div id="images" class="relative">
-        
-        <img src="/Images/fashionModel.jpg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
-        <img src="/Images/model_One.jpg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
-        <img src="/Images/modelOnRunway.jpg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
-        <img src="/Images/Runway.jpeg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
-        <img src="/Images/runwayImage.jpeg" class="mt-6 h-96 w-96 object-fill" alt="fashion model">
+  <header class="flex h-20 w-64 pt-8 mr-96 sticky">
+    <img src="/Logo.png" class="h-8 pl-6" alt="Logo">
+    <nav>
+      <ul class="flex gap-24 ml-20">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#" class="w-56"> WORK</a></li>
+        <li><a href="#">BLOGS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <div id="container" class="flex">
+   
+      <div id="slider-content">
+        <div id="image-list">
+          <div class="img-item">
+            <img src="/Images/beauty.jpg" alt="beauty">
+          </div>
+          <div class="img-item">
+            <img src="/Images/fashion+beauty.jpg" alt="beauty">
+          </div>
+          <div class="img-item">
+            <img src="/Images/fashionModel.jpg" alt="beauty">
+          </div>
+          <div class="img-item">
+            <img src="/Images/model_One.jpg" alt="beauty">
+          </div>
+          <div class="img-item">
+            <img src="/Images/modelOnRunway.jpg" alt="beauty">
+          </div>
+          <div class="img-item">
+            <img src="/Images/Runway.jpeg" alt="beauty">
+          </div>
+          <div class="img-item">
+            <img src="/Images/runwayImage.jpeg" alt="beauty">
+          </div>
+        </div>
+    
       </div>
+       
 
-    <!--Text will change constantly-->
-    <div id="text-content" class="text-peach ml-4 text-2xl font-bold font-serif">
-      <p>Fashion is <span id="messages"></span></p>
+        <div id="message" class="relative mt-96 ml-40 font-Lexend text-4xl font-bold">
+          <h2>Fashion is <span></span></h2>
+        </div>
     </div>
-   </div>
+    
   </main>
-
-  <footer>
-
-  </footer>
 </body>
 </html>

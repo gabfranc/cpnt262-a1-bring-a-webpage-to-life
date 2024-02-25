@@ -2,7 +2,7 @@
 
 const cursor = document.querySelector("#mousemove");
 
-//TODO: add event listener so that the cursor will move
+//DONE: add event listener so that the cursor will move
 
 document.addEventListener("DOMContentLoaded", function() {
   const mouseMove = document.getElementById('mousemove');
