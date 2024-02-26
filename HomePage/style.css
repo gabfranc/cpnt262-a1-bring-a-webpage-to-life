@@ -158,6 +158,37 @@ span {
 #words.behind {
   transform: rotateX(-90deg);
 }
+
+
+
+/************************ Team Profile setting *****************************/
+#team-profile {
+  background: #eca48c;
+  height: 200vh;
+  width: 200vh;
+  padding-top: 86vh;
+  margin-top: 34rem;
+  margin-right: 2vh;
+  padding-left: 25vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+#team-profile .team-container {
+  display: grid;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 100vh;
+}
+
+#team-profile .team-container .image img{
+  height: 200px;
+  width: 200px;
+  object-fit:cover;
+}
 /** Mouse movement ***/
 
 
@@ -188,21 +219,23 @@ span {
   content:'';
   position: absolute;
   background: #b15757;
-  width: 6vh;
-  height: 6vh;
+  width: 3vh;
+  height: 3vh;
   opacity: 0.3;
-  border-radius: 50vh;
+  border-radius: 5px;
   box-shadow: 3px 3px 30px #f4fffb,
   3px 3px 30px #eca48c,
   3px 3px 30px #eca48c;
   transform: translate(-30%, -30%);
+  animation: rotate 2s infinite;
 }
 
-/****Hamburger Bar***/
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
 
-#hamburger-toggle{
-  display: block;
-  width: 35px;
-  height: 20px;
-  background: #140303;
+  100% {
+    rotate: 360deg;
+  }
 }
