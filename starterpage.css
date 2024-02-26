@@ -18,12 +18,18 @@ h2 {
   font-size: 15vh;
   font-weight: 900;
   color: #7a2727;
+  cursor: none;
+}
+
+h2 a{
+  cursor: none;
 }
 
 section {
   position: absolute;
   min-height: 60vh;
   margin-top: 25vh;
+  cursor: none;
 }
 
 h2 span {
@@ -88,12 +94,13 @@ h2 span:nth-child(7) {
   position: fixed;
   width: 3vh;
   height: 3vh;
-  border-radius: 50px;
+  border-radius: 5px;
   box-shadow: 3px 3px 30px #f4fffb,
               3px 3px 30px #eca48c,
               3px 3px 30px #eca48c;
   pointer-events: none;
   animation: colors 5s infinite;
+
 }
 
 @keyframes colors {
@@ -110,12 +117,23 @@ h2 span:nth-child(7) {
   content:'';
   position: absolute;
   background: #b15757;
-  width: 6vh;
-  height: 6vh;
+  width: 3vh;
+  height: 3vh;
   opacity: 0.3;
-  border-radius: 50vh;
+  border-radius: 5px;
   box-shadow: 3px 3px 30px #f4fffb,
   3px 3px 30px #eca48c,
   3px 3px 30px #eca48c;
   transform: translate(-30%, -30%);
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
 }
