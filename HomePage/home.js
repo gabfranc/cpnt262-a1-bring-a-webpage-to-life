@@ -37,8 +37,37 @@ let myColorNum = 0;
 
 textAnimate.style.transform = "rotate(360deg)";
 textAnimate.style.color = "#024282";
-// Setting the intervals for the text to change
-setInterval(rotate, 2000); // For every 3 seconds, the text will rotate constantly.
+// DONE: Setting the intervals for the text to change
+setInterval(rotate, 2000); // For every 2 seconds, the text will change constantly.
+
+// Button animation setting
+
+//DONE: create element for buttons
+
+const buttonEl = document.querySelectorAll(".btn");
+
+//DONE: set function element for button animation
+buttonEl.onmousemove = function(e) {
+  const btnX = e.pageX - buttonEl.offsetLeft;
+  const btnY = e.pageY - buttonEl.offsetTop;
+
+  buttonEl.style.setProperty('--x', btnX + 'px');
+  buttonEl.style.setProperty('--y', btnY + 'px');
+}
+
+
+//TODO: set up function for dark mode toggle on logo
+
+function toggleEvent() {
+  btn.classList.toggle("darkBtn");
+}
+
+
+
+
+
+
+
 
 
  

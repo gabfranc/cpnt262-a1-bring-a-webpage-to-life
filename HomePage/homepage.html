@@ -56,14 +56,14 @@
 <body class="bg-white overflow-x-hidden h-max">
   <div id="mousemove"></div>
   <header class="flex h-20 w-64 pt-8 mr-96 sticky">
-    <img src="/Logo.png" class="h-8 pl-6" alt="Logo">
+    <img src="/Logo.png" class="h-8 pl-6 hover:animate-bounce" id="logo" alt="Logo" onclick="toggleSwitch()">
     <nav>
       <ul class="flex gap-24 ml-20">
-        <li class="nav-link"><a href="#">HOME</a></li>
-        <li class="nav-link"><a href="#">ABOUT</a></li>
-        <li class="nav-link"><a href="#" class="w-56"> WORK</a></li>
-        <li class="nav-link"><a href="#">BLOGS</a></li>
-        <li class="nav-link"><a href="#">CONTACT</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#">HOME</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#">ABOUT</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#" class="w-56"> WORK</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#">BLOGS</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -102,8 +102,8 @@
         <div id="message" class="relative mt-80 ml-45 font-Lexend text-4xl font-bold">
           <h2 class="ml-16">Fashion is <span id="words" class="font-3xl font-bold"></span></h2>
           <div id="button" class="flex-column">
-            <button type="button" href="#" id="btn2" class="bg-red">OUR WORK</button>
-            <button type="button" href="#" id="btn" class="bg-red-dark"> EVENTS</button>
+            <button type="button" href="#" class="btn bg-red"><span>OUR WORK</span></button>
+            <button type="button" href="#" class="btn bg-red-dark"> <span>EVENTS</span></button>
           </div>
         </div>
         
