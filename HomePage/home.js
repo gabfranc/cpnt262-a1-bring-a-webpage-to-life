@@ -24,7 +24,7 @@ autoSlide();
 
 // Text will change constantly on loading page
 const textAnimate = document.getElementById('words');
-const messages = ['Fearleass', 'Stylish', 'Bold', 'Fierce', 'Carefree', 'Wild', 'Reputation', 'Unique', 'Beauty'];
+const messages = ['Fearless', 'Stylish', 'Bold', 'Fierce', 'Carefree', 'Wild', 'Reputation', 'Unique', 'Beauty'];
 
 let myIndexNum = 0;
 
