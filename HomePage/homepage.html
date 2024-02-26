@@ -55,21 +55,22 @@
 </head>
 <body class="bg-white overflow-x-hidden h-max">
   <div id="mousemove"></div>
-  <header class="flex h-20 w-64 pt-8 mr-96 sticky">
-    <img src="/Logo.png" class="h-8 pl-6 hover:animate-bounce" id="logo" alt="Logo" onclick="toggleSwitch()">
-    <nav>
-      <ul class="flex gap-24 ml-20">
-        <li class="nav-link hover:animate-bounce"><a href="#">HOME</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="#">ABOUT</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="#" class="w-56"> WORK</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="#">BLOGS</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="#">CONTACT</a></li>
+  <header class="flex h-20 w-64 pt-8 mr-96 relative">
+    <img src="/Logo.png" class="h-8 hover:animate-bounce relative" id="logo" alt="Logo" onclick="toggleSwitch()">
+    <nav class="relative bg-white p-12 p-3">
+      
+      <ul class="flex gap-16 ml-20">
+        <li class="nav-link hover:animate-bounce"><a href="#" class="active">HOME</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#about-info" class="active">ABOUT</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#services" class="active"> SERVICES</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#our-work" class="active"> WORK</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="#contact" class="active">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div id="container" class="flex">
+    <div id="container" class="flex mt-16">
    
       <div id="slider-content">
         <div id="image-list">
@@ -102,14 +103,14 @@
         <div id="message" class="relative mt-80 ml-45 font-Lexend text-4xl font-bold">
           <h2 class="ml-16">Fashion is <span id="words" class="font-3xl font-bold"></span></h2>
           <div id="button" class="flex-column">
-            <button type="button" href="#" class="btn bg-red"><span>OUR WORK</span></button>
+            <button type="button" class="btn bg-red"><a href="#our-work"></a><span>OUR WORK</span></button>
             <button type="button" href="#" class="btn bg-red-dark"> <span>EVENTS</span></button>
           </div>
         </div>
         
     </div>
     
-    <div id="about-info" class="absolute pl-12">
+    <section id="about-info" class="absolute pl-12">
       <div id="what-we-do">
         <h2 id="about-title" class="font-Lexend font-bold text-2xl text-center">What We DO?</h2>
 
@@ -117,9 +118,9 @@
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
           eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-    </div>
+    </section>
 
-    <div id="team-profile">
+    <section id="team-profile">
       <h2 class="title font-bold font-Lexend text-3xl text-center">Our Team</h2>
       <div class="team-container">
         <div class="image">
@@ -166,9 +167,83 @@
         </div>
       </div>
   
-    </div>
+    </section>
+
+    <section id="services">
+      <h2 class="text-center font-bold text-3xl">SERVICES</h2>
+
+      <div id="servicecards" class="flex gap-16 mt-24 ml-12">
+        <div class="cards">
+          <h2>Modelling Classes</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor incididunt</p>
+        </div>
+        <div class="cards">
+          <h2>Fashion Fit</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor incididunt</p>
+        </div>
+        <div class="cards">
+          <h2>Photoshoot</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor incididunt</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="contact-title text-center font-bold text-3xl">CONTACT</h2>
+
+      <p>Do you have any questions or concerns? Let us know!</p>
+
+      <form class="justify-center align-center">
+        <div id="name" class="flex gap-16">
+          <input type="text" id="f-name" value="First Name" required>
+          <input type="text" id="l-name" value="Last Name" required>
+        </div>
+        <div id="contact-info" class="flex gap-16 mt-10">
+          <input type="text" id="email" value="Email" required>
+          <input type="text" id="phone-num" value="Phone Number" required>
+        </div>
+
+        <h3>What is your concern?</h3>
+        <div id="select-buttons" class="flex m-12 gap-16">
+          <div class="concerns">
+            <label for="radio-button">Classes</label>
+            <div id="radio-button"><input type="radio" value="Classes"></div>
+          </div>
+          <div class="concerns">
+            <label for="radio-button2">Events</label>
+            <div id="radio-button2"><input type="radio" value="Events"></div>
+          </div>
+          <div class="concerns">
+          <label for="radio-button3">General</label>
+          <div id="radio-button3"><input type="radio" value="General"></div>
+          </div>
+
+         
+        </div>
+         <button id="submit" class="bg-red text-peach h-12 w-20 hover:bg-peach hover:text-red">Submit</button>
+      </form>
+    </section>
 
 
   </main>
+
+  <footer class="pt-7 relative">
+    <div id="foot-content" class="flex gap-16 ml-16 justify-center">
+      <div id="footer-logo" class="ml-12 mt-2">
+      <img src="/Logo.png" alt="logo" class="h-8 mb-12">
+      </div>
+      <div id="social-media" class="flex gap-8 ml-36 justify-end align-end">
+        <img src="/facebook (2).png" class="h-6" alt="facebook">
+        <img src="/twitter (1).png" class="h-6" alt="twitter">
+        <img src="/instagram (2).png" class="h-6" alt="instagram">
+        <img src="/linkedin.png"  class="h-8" alt="linkedin">
+      </div>
+    </div>
+    <div id="copyright" class="text-center justify-center ml-36">
+      <h3>All rights reserved February 2024</h3>
+    </div>
+  </footer>
 </body>
 </html>

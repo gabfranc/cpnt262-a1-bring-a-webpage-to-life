@@ -3,7 +3,7 @@ let imageIndex = 0;
 
 //DONE: set function for carousel animation
 function autoSlide() {
-  setTimeout(autoSlide, 5000);
+  setTimeout(autoSlide, 4000);
   
   let x;
   const images = document.querySelectorAll(".img-item");
@@ -30,7 +30,7 @@ let myIndexNum = 0;
 
 function rotate(){
   textAnimate.textContent = messages[myIndexNum];
-  myIndexNum = (myIndexNum + 3) % messages.length;
+  myIndexNum = (myIndexNum + 4) % messages.length;
 }
 
 let myColorNum = 0;
@@ -38,7 +38,7 @@ let myColorNum = 0;
 textAnimate.style.transform = "rotate(360deg)";
 textAnimate.style.color = "#024282";
 // DONE: Setting the intervals for the text to change
-setInterval(rotate, 2000); // For every 2 seconds, the text will change constantly.
+setInterval(rotate, 3000); // For every 3 seconds, the text will change constantly.
 
 // Button animation setting
 

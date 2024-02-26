@@ -4,24 +4,55 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   cursor: none;
   max-height: 200vh;
   background: linear-gradient(#f4fffb, #eca48c);
-  font-family: "Lexend Deca", sans-serif;
 }
 
 header {
   margin-top: 3vh;
-  margin-left: 5vh;
+  margin-left: 15vh;
   cursor: none;
 }
 
 nav li a{
+  margin-left: 12px;
   cursor: none;
+  border: none;
 }
+
+header nav li a:hover {
+  border: 1px solid #b15757;
+  padding: 15px;
+  border-radius: 14vh;
+  font-size: 16px;
+  height: 2vh;
+  width: 6vh;
+}
+
+header nav li a:active {
+  border: 1px solid #b15757;
+  padding: 15px;
+  border-radius: 14vh;
+  font-size: 16px;
+  height: 2vh;
+  width: 6vh;
+}
+
+header nav li a:focus {
+  border: 3px solid #b15757;
+  padding: 15px;
+  border-radius: 14vh;
+  font-size: 16px;
+  height: 2vh;
+  width: 6vh;
+}
+
 
 /******The dark mode toggle switch*****/
 
@@ -44,7 +75,7 @@ nav li a{
   position: absolute;
   margin-top: 3vh;
   padding-top: 4vh;
-  padding-left: 2vh;
+  padding-left: 4vh;
   height: 900px;
   width: 700px;
   object-fit: cover;
@@ -164,7 +195,7 @@ span {
 /************************ Team Profile setting *****************************/
 #team-profile {
   background: #eca48c;
-  height: 200vh;
+  height: 160vh;
   width: 200vh;
   padding-top: 36vh;
   margin-top: 34rem;
@@ -183,17 +214,108 @@ span {
 #team-profile .team-container {
   margin-top: 14vh;
   display: grid;
+  flex-wrap: wrap;
   position: relative;
-  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   min-height: 100vh;
 }
 
-#team-profile .team-container .image img{
+#team-profile .team-container .image {
   margin-top: 42px;
   height: 200px;
   width: 200px;
   object-fit:cover;
+  border-radius: 10px;
+  cursor:none;
+}
+
+#team-profile .team-container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+#team-profile .team-container .image:hover img {
+  transform: scale(1.1);
+}
+
+
+/** SERVICES SECTION **/
+#services {
+  background: #eca48c;
+  height: 160vh;
+  width: 200vh;
+  padding-top: 16vh;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cards {
+  height: 70vh;
+  width: 50vh;
+  background:  linear-gradient(#b15757, #eca48c, #f4fffb);
+  border-radius: 30vh;
+  padding-top: 25vh;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+
+}
+
+.cards:hover{
+  margin-top: -5vh;
+  width: 55vh;
+  background:  linear-gradient(#eca48c, #b15757, #f4fffb);
+}
+/** Contact Section **/
+
+#contact {
+  background: #eca48c;
+  height: 120vh;
+  width: 200vh;
+  padding-top: 16vh;
+  margin-top: 0;
+  margin-right: 2vh;
+  padding-left: -2vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+#contact p {
+  margin-top: 12vh;
+  text-align: center;
+}
+#contact h3 {
+  margin-top: 15px;
+  margin-left: 115px;
+  padding-top: 14px;
+}
+
+form {
+  margin-top: 14vh;
+  margin-left: 65vh;
+}
+
+#submit {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 25vh;
+  border-radius: 10vh;
+}
+
+/*********Footer setting*************/
+
+footer {
+  background: #b15757;
+
 }
 /** Mouse movement ***/
 
@@ -245,3 +367,4 @@ span {
     rotate: 360deg;
   }
 }
+
