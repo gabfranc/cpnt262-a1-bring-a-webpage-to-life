@@ -166,7 +166,7 @@ span {
   background: #eca48c;
   height: 200vh;
   width: 200vh;
-  padding-top: 86vh;
+  padding-top: 36vh;
   margin-top: 34rem;
   margin-right: 2vh;
   padding-left: 25vh;
@@ -176,15 +176,21 @@ span {
 
 }
 
+#team-profile .title {
+  margin-left: -23vh;
+}
+
 #team-profile .team-container {
+  margin-top: 14vh;
   display: grid;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   min-height: 100vh;
 }
 
 #team-profile .team-container .image img{
+  margin-top: 42px;
   height: 200px;
   width: 200px;
   object-fit:cover;
