@@ -293,10 +293,10 @@ span {
 }
 
 .cards {
-  height: 70vh;
+  height: 80vh;
   width: 50vh;
   background:  linear-gradient(#b15757, #eca48c, #f4fffb);
-  border-radius: 30vh;
+  border-radius: 30px;
   padding-top: 25vh;
   padding-left: 40px;
   padding-right: 40px;
@@ -310,6 +310,25 @@ span {
   margin-top: -5vh;
   width: 55vh;
   background:  linear-gradient(#eca48c, #b15757, #f4fffb);
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+}
+
+.cards img {
+  height:40vh;
+  width:30vh;
+  object-fit: cover;
+  border-bottom: 0;
+  margin-top: -23vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 22px;
+}
+
+.cards #model{
+  padding-top: -2vh;
+  padding-bottom: -2vh;
 }
 /** Contact Section **/
 
