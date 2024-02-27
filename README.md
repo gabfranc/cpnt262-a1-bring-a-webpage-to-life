@@ -4,6 +4,7 @@
 [Colour Schemes](https://coolors.co/b6a0a0-140303-eca48c-f4fffb-944545)
 [cursor movement](https://www.youtube.com/watch?v=oOWHNKZlnWQ)
 [Image Carousel](https://www.youtube.com/watch?v=MGKASk0k7_U)
+[Adding image gallery using arrays](https://www.geeksforgeeks.org/how-to-display-images-from-an-array-in-javascript/)
 [insta logo](https://www.flaticon.com/search?word=instagram%20logo)
 [fb logo](https://www.flaticon.com/search?word=facebook%20logo)
 [linkedin logo](https://www.flaticon.com/search?word=linkedin%20logo)
