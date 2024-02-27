@@ -407,7 +407,7 @@ footer {
   background: #b15757;
   width: 3vh;
   height: 3vh;
-  opacity: 0.3;
+  opacity: 50%;
   border-radius: 5px;
   box-shadow: 3px 3px 30px #f4fffb,
   3px 3px 30px #eca48c,
