@@ -93,6 +93,11 @@ header nav li a:focus {
   height: 70px;
   width: 20vh;
 }
+
+.menu_icon {
+  display: none;
+}
+
 /******The dark mode toggle switch*****/
 
 #slider-content {
