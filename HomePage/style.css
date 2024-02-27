@@ -336,7 +336,7 @@ span {
   background: #eca48c;
   height: 120vh;
   width: 200vh;
-  padding-top: 16vh;
+  padding-top: 6vh;
   margin-top: 0;
   margin-right: 2vh;
   padding-left: -2vh;
@@ -354,6 +354,32 @@ span {
   margin-top: 15px;
   margin-left: 115px;
   padding-top: 14px;
+}
+
+#contact button {
+  border: 2px solid #f4fffb;
+  border-radius: 10px;
+}
+#contact button:hover {
+  border: 1px solid #f4fffb;
+  box-shadow: 1px 1px 3px #b15757;
+  color: #f4fffb;
+}
+
+.input-field {
+  justify-content: center;
+  align-items: center;
+  margin-top:5vh;
+  
+}
+
+.input-field input {
+  width: 15em;
+  height: 6vh;
+  text-align: center;
+}
+.input-field #message-box {
+  height: 18vh;
 }
 
 form {

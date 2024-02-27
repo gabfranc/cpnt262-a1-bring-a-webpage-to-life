@@ -75,9 +75,31 @@ function hideSidebar(){
   sidebar.style.display= 'none'
 }
 
+//DONE: set up variables for the contact section
+
+const inputForm = document.querySelector("form");
+const nameValue = document.getElementById("name");
+const emailValue = document.getElementById("email");
+const phoneValue = document.getElementById("phone-num");
+const textValue = document.getElementById("message-box");
 
 
+//DONE: set up alert for when submit is clicked
 
+function submitEvent () {
+  const message = `Name: ${nameValue.value} <br> Email: ${emailValue.value} <br> Phone Number: ${phoneValue.value} <br> Message: ${textValue.value}`;
+  alert("THANK YOU!!!");
+}
+
+//DONE: add event listener to form
+
+
+inputForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+
+  submitEvent();
+});
 
 
 

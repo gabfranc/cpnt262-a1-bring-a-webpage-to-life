@@ -117,6 +117,7 @@
         </div>
         
     </div>
+
     
     <section id="about-info" class="absolute pl-12">
       <div id="what-we-do">
@@ -128,6 +129,7 @@
       </div>
     </section>
 
+    </div>
     <section id="team-profile">
       <h2 class="title font-bold font-Lexend text-3xl text-center">Our Team</h2>
       <div class="team-container">
@@ -206,35 +208,26 @@
 
       <p>Do you have any questions or concerns? Let us know!</p>
 
-      <form class="justify-center align-center">
-        <div id="name" class="flex gap-16">
-          <input type="text" id="f-name" value="First Name" required>
-          <input type="text" id="l-name" value="Last Name" required>
-        </div>
-        <div id="contact-info" class="flex gap-16 mt-10">
-          <input type="text" id="email" value="Email" required>
-          <input type="text" id="phone-num" value="Phone Number" required>
-        </div>
-
-        <h3>What is your concern?</h3>
-        <div id="select-buttons" class="flex m-12 gap-16">
-          <div class="concerns">
-            <label for="radio-button">Classes</label>
-            <div id="radio-button"><input type="radio" value="Classes"></div>
+      <form action="#" class="justify-center align-center ml-96 pl-48">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Name" id="name" value="name" class="box" autocomplete="off">
+         </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email" id="email" value="email" class="box" autocomplete="off">
+         </div>
+          <div class="input-field">
+            <input type="text" placeholder="Phone Number" id="phone-num" value="phone number" class="box" autocomplete="off">
           </div>
-          <div class="concerns">
-            <label for="radio-button2">Events</label>
-            <div id="radio-button2"><input type="radio" value="Events"></div>
+          <div class="input-field">
+            <input type="text" placeholder="Message" id="message-box" value="message" class="box h-16" autocomplete="off">
           </div>
-          <div class="concerns">
-          <label for="radio-button3">General</label>
-          <div id="radio-button3"><input type="radio" value="General"></div>
-          </div>
-
-         
         </div>
-         <button id="submit" class="bg-red text-peach h-12 w-20 hover:bg-peach hover:text-red">Submit</button>
+        <button type="submit" class="bg-red text-sm h-10 w-16 justify-center mt-12 ml-20
+        rounded-sm text-peach" onclick="submitEvent()" autocomplete="off"><a href="#">Submit</a></button>
       </form>
+      
+         
     </section>
 
 
