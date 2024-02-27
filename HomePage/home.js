@@ -102,7 +102,7 @@ inputForm.addEventListener("submit", (e) => {
 });
 
 
-//TODO: create function for audio player toggle 
+//DONE: create function for audio player toggle 
 
 document.addEventListener('DOMContentLoaded', function () {
   const audio = document.getElementById('myAudio');
