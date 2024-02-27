@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Patrick+Hand&family=Sora:wght@100..800&family=Updock&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: none;
+  max-height: 700vh;
+  background: linear-gradient(#eca48c, #f4fffb);
+}
+
+header {
+  margin-top: 3vh;
+  margin-left: 15vh;
+  cursor: none;
+}
+
+nav li a{
+  margin-left: 12px;
+  cursor: none;
+  border: none;
+}
+
+header nav li a:hover {
+  border: 1px solid #b15757;
+  padding: 15px;
+  border-radius: 14vh;
+  font-size: 16px;
+  height: 2vh;
+  width: 6vh;
+}
+
+header nav li a:active {
+  border: 1px solid #b15757;
+  padding: 15px;
+  border-radius: 14vh;
+  font-size: 16px;
+  height: 2vh;
+  width: 6vh;
+}
+
+header nav li a:focus {
+  border: 3px solid #b15757;
+  padding: 15px;
+  border-radius: 14vh;
+  font-size: 16px;
+  height: 2vh;
+  width: 6vh;
+}
+
+
+/*************** Image Gallery Content CSS Settings **********************/
+
+#image-container {
+  margin-top: -4vh;
+  padding: 34vh;
+  display: grid;
+  flex-wrap: wrap;
+  position: relative;
+  background: #eca48c;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9vh;
+  min-height: 200vh;
+}
+#image-container img {
+
+  height: 60vh;
+  width: 65vh;
+  object-fit: cover;
+}
+
+#image-container img:hover {
+  border-radius: 20px;
+  height: 65vh;
+  width: 60vh;
+}
+
+/******************* Our Work title **************************/
+
+.heading {
+  margin: 14vh;
+  padding: 6vh;
+}
+
+.heading p {
+  padding: 3vh;
+  margin-top: 5vh;
+}
+
+/*********Footer setting*************/
+
+footer {
+  background: #b15757;
+
+}
+
+footer img{
+  height: 10px;
+}
+
+
+/** Mouse movement ***/
+
+
+#mousemove {
+  z-index:999;
+  position: fixed;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50px;
+  box-shadow: 3px 3px 30px #f4fffb,
+              3px 3px 30px #eca48c,
+              3px 3px 30px #eca48c;
+  pointer-events: none;
+  animation: colors 5s infinite;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(180deg);
+  }
+}
+
+#mousemove::before{
+  content:'';
+  position: absolute;
+  background: #b15757;
+  width: 3vh;
+  height: 3vh;
+  opacity: 0.3;
+  border-radius: 5px;
+  box-shadow: 3px 3px 30px #f4fffb,
+  3px 3px 30px #eca48c,
+  3px 3px 30px #eca48c;
+  transform: translate(-30%, -30%);
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+

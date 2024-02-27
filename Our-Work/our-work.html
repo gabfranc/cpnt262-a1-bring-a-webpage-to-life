@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bring a Webpage to Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Patrick+Hand&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="our-work.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Patrick+Hand&family=Sora:wght@100..800&family=Updock&display=swap" rel="stylesheet">
+  <script src="../Our-Work/our-work.js" defer></script>
+  <script type="module" src="../client.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'red': '#b15757',
+            'red-dark': '#b02e2e',
+            'peach': '#eca48c',
+            'white': 'f4fffb',
+            'black': '#140303', 
+          },
+
+          screens: {
+            '1': '570px',
+            '2': '768px',
+            '3': '1024px',
+            '4': '1280px',
+            '5': '1536px',
+          },
+
+          fontsize: {
+            'sm':'16',
+            'lg': '36',
+            'xl': '56',
+            '2xl': '64',
+            '3xl':'72',
+          },
+
+          spacing: {
+            'm': '5vh',
+            'p': '15vh',
+          }
+
+
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white overflow-x-hidden h-max">
+  <div id="mousemove"></div>
+  <header class="flex h-20 w-64 pt-8 mr-96 relative">
+    <img src="../Logo.png" class="h-8 hover:animate-bounce relative" id="logo" alt="Logo" onclick="toggleSwitch()">
+    <nav class="relative bg-white p-12 p-3">
+      
+      <ul class="flex gap-16 ml-20">
+        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active">HOME</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active">ABOUT</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active"> SERVICES</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active"> WORK</a></li>
+        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="heading">
+      <h2 class="text-2xl font-bold text-center">OUR WORK</h2>
+      <p class="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="image-container" class="flex-grid overflow-hidden"></div>
+  </main>
+  <footer class="pt-7 relative">
+    <div id="foot-content" class="flex gap-16 ml-16 justify-center">
+      <div id="footer-logo" class="ml-12 mt-2">
+      <img src="../Logo.png" alt="logo" class="h-8 mb-12">
+      </div>
+      <div id="social-media" class="flex gap-8 ml-36 justify-end align-end">
+        <img src="../facebook (2).png" class="h-6" alt="facebook">
+        <img src="../twitter (1).png" class="h-6" alt="twitter">
+        <img src="../instagram (2).png" class="h-6" alt="instagram">
+        <img src="../linkedin.png"  class="h-6" alt="linkedin">
+      </div>
+    </div>
+    <div id="copyright" class="text-center justify-center ml-36">
+      <h3>All rights reserved February 2024</h3>
+    </div>
+  </footer>
+
+</body>
+</html>
