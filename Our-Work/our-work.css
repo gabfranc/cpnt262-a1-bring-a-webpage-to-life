@@ -53,6 +53,52 @@ header nav li a:focus {
   width: 6vh;
 }
 
+/****************************** Hamburger Bar ****************************************/
+
+/************ Mobile Bar *******************/
+
+#sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #b15757;
+  font-weight: 500;
+  box-shadow: -12px 0px 4px rgba(94, 43, 31, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#sidebar li {
+  margin-top: 25px;
+  width: 100%;
+}
+
+#sidebar a {
+  color:#ebe9ff;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+#sidebar a:hover {
+  color:#b15757;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  font-weight: 600;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+#sidebar li:hover {
+  margin-top: 25px;
+  width: 100%;
+  height: 70px;
+  width: 20vh;
+}
+
 
 /*************** Image Gallery Content CSS Settings **********************/
 
@@ -155,3 +201,26 @@ footer img{
   }
 }
 
+@media screen and (max-width: 750px) {
+
+
+  #sidebar {
+    width: 100%;
+    background-color: #eca48c;
+  }
+
+  #desktop-bar {
+    display: none;
+  }
+
+}
+
+@media(max-width: 800px) {
+  nav .OnMobile{
+    display: none;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+}

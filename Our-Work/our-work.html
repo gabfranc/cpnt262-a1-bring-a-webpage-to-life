@@ -53,18 +53,28 @@
     }
   </script>
 </head>
+<div id="mousemove" class="relative"></div>
 <body class="bg-white overflow-x-hidden h-max">
-  <div id="mousemove"></div>
   <header class="flex h-20 w-64 pt-8 mr-96 relative">
     <img src="../Logo.png" class="h-8 hover:animate-bounce relative" id="logo" alt="Logo" onclick="toggleSwitch()">
     <nav class="relative bg-white p-12 p-3">
       
-      <ul class="flex gap-16 ml-20">
-        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active">HOME</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active">ABOUT</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active"> SERVICES</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active"> WORK</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="../HomePage/homepage.html" class="active">CONTACT</a></li>
+      <ul id="sidebar" class="pl-16 ml-12">
+        <li onclick="hideSidebar()" class="close-icon"><a href="#" class="hover:border-none only"><img src="../mobile-toggle/close.png" alt="close-icon" class="h-6 hover:h-8"></a></li>
+        <li><a href="../HomePage/homepage.html">HOME</a></li>
+        <li><a href="../HomePage/homepage.html">ABOUT</a></li>
+        <li><a href="../HomePage/homepage.html">SERVICES</a></li>
+        <li><a href="../HomePage/homepage.html">BLOGS</a></li>
+        <li><a href="../HomePage/homepage.html">CONTACT</a></li>
+        
+      </ul>
+      <ul class="flex gap-24 ml-16">
+        <li class="OnMobile"><a href="../HomePage/homepage.html">HOME</a></li>
+        <li class="OnMobile"><a href="../HomePage/homepage.html">ABOUT</a></li>
+        <li class="OnMobile"><a href="../HomePage/homepage.html">SERVICES</a></li>
+        <li class="OnMobile"><a href="../HomePage/homepage.html">BLOGS</a></li>
+        <li class="OnMobile"><a href="../HomePage/homepage.html">CONTACT</a></li>
+        <li class="menu_icon" onclick="showSidebar()"><a href="#"><img src="../mobile-toggle/menu.png" alt="menu-bar" class="h-6 hover:h-8"></a></li>
       </ul>
     </nav>
   </header>

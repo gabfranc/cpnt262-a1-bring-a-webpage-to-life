@@ -11,3 +11,16 @@ for (let i =0; i < imageElement.length; i++) {
   img.src = imageElement[i];
   imageContainer.appendChild(img);
 }
+
+//DONE: set up functions for hamburger bar icon 
+
+function showSidebar(){
+  const sidebar = document.querySelector('#sidebar')
+  sidebar.style.display= 'flex'
+}
+
+function hideSidebar(){
+  const sidebar = document.querySelector('#sidebar')
+  sidebar.style.display= 'none'
+}
+

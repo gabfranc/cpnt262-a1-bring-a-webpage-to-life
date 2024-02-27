@@ -59,14 +59,24 @@
     <img src="../Logo.png" class="h-8 hover:animate-bounce relative" id="logo" alt="Logo" onclick="toggleSwitch()">
     <nav class="relative bg-white p-12 p-3">
       
-      <ul class="flex gap-16 ml-20">
-        <li class="nav-link hover:animate-bounce"><a href="#" class="active">HOME</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="#about-info" class="active">ABOUT</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="#services" class="active"> SERVICES</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="#our-work" class="active"> WORK</a></li>
-        <li class="nav-link hover:animate-bounce"><a href="#contact" class="active">CONTACT</a></li>
+      <ul id="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><img src="../mobile-toggle/close.png" alt="close-icon" class="h-6 hover:h-8"></a></li>
+        <li><a href="../HomePage/homepage.html">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">BLOGS</a></li>
+        <li><a href="#">CONTACT</a></li>
+        
       </ul>
-    </nav>
+      <ul class="flex gap-24 ml-16">
+        <li class="OnMobile"><a href="#">HOME</a></li>
+        <li class="OnMobile"><a href="#">ABOUT</a></li>
+        <li class="OnMobile"><a href="#">SERVICES</a></li>
+        <li class="OnMobile"><a href="#">BLOGS</a></li>
+        <li class="OnMobile"><a href="#">CONTACT</a></li>
+        <li class="menu_icon" onclick="showSidebar()"><a href="#"><img src="../mobile-toggle/menu.png" alt="hamburger-icon" class="h-6 hover:h-8"></a></li>
+      </ul>
+      </nav>
   </header>
 
   <main>
@@ -103,7 +113,7 @@
         <div id="message" class="relative mt-80 ml-45 font-Lexend text-4xl font-bold">
           <h2 class="ml-16">Fashion is <span id="words" class="font-3xl font-bold"></span></h2>
           <div id="button" class="flex-column">
-            <button type="button" class="btn bg-red"><a href="../Our-Work/our-work.html"><span>OUR WORK</span></a></button>
+            <button type="button" class="btn bg-red"><a href="../Our-Work/our-work.html"></a><span>OUR WORK</span></button>
             <button type="button" href="#" class="btn bg-red-dark"> <span>EVENTS</span></button>
           </div>
         </div>

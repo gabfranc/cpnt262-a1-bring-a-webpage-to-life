@@ -56,11 +56,25 @@ buttonEl.onmousemove = function(e) {
 }
 
 
-//TODO: set up function for dark mode toggle on logo
+//DONE: set up function for dark mode toggle on logo
 
 function toggleEvent() {
   btn.classList.toggle("darkBtn");
 }
+
+
+//DONE: set up functions for hamburger bar icon 
+
+function showSidebar(){
+  const sidebar = document.querySelector('#sidebar')
+  sidebar.style.display= 'flex'
+}
+
+function hideSidebar(){
+  const sidebar = document.querySelector('#sidebar')
+  sidebar.style.display= 'none'
+}
+
 
 
 
