@@ -61,7 +61,7 @@ header nav li a:focus {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgb(163, 131, 98);
+  background-color: #b15757;
   box-shadow: -12px 0px 4px rgba(94, 43, 31, 0.7);
   display: flex;
   flex-direction: column;
